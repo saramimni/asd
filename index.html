@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성안고등학교 일정표</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>성안고등학교 일정표</h1>
+      <div id="current-time"></div> <!-- 현재 시각 표시 -->
+    </header>
+    <div class="content">
+      <section id="school-schedule">
+        <h2>학교 일정 (오늘)</h2>
+        <ul id="schedule-list"></ul>
+      </section>
+      <section id="my-tasks">
+        <h2>오늘의 과제</h2>
+        <div class="task-inputs">
+          <input type="text" id="task-input" placeholder="과제 이름 입력">
+          <input type="time" id="task-time">
+          <button onclick="addTask()">추가</button>
+        </div>
+        <ul id="task-list"></ul>
+      </section>
+      <section class="weekly-schedule">
+        <h2>1주일 간의 일정</h2>
+        <ul id="weekly-schedule-list"></ul>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
